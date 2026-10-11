@@ -1,0 +1,14 @@
+{
+  "name": "local-model-capability-postcard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Run small, repeatable checks against local LLMs and render a shareable offline capability card.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/cli.js && node --check src/providers.js && node --check src/runner.js && node --check src/report.js"
+  }
+}

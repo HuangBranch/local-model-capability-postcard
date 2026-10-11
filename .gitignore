@@ -1,0 +1,5 @@
+node_modules/
+coverage/
+capability-postcard.html
+capability-results.json
+.DS_Store
