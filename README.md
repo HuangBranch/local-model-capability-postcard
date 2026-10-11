@@ -1,5 +1,7 @@
 # Local Model Capability Postcard
 
+**Language:** [English](README.md) · [简体中文](README.zh-CN.md)
+
 Run the same five small checks against models served by Ollama or an OpenAI-compatible local runtime, then generate a self-contained HTML card you can share. No dependencies beyond Node.js 18+, and no result upload.
 
 > Scores are a quick, transparent signal—not a scientific benchmark. They depend on the prompts, model versions, hardware and runtime settings.
@@ -37,17 +39,6 @@ Requires Node.js 18 or newer; there are no third-party dependencies.
 npm test
 npm run check
 ```
-
-## 简体中文
-
-这是一个零依赖的小工具：用同一组五项检查测试 Ollama 或兼容 OpenAI API 的本机模型，并生成可离线打开的单文件 HTML 能力卡。默认仅连接本机/私有局域网地址，不会上传测试结果；是否分享由你决定。
-
-```sh
-node src/cli.js
-node src/cli.js --provider openai --url http://localhost:1234/v1 --model qwen3-8b
-```
-
-能力分仅用于快速对比，不是科学基准；代码结构和中文回答检查采用启发式判断。可用 `npm test` 和 `npm run check` 验证项目。
 
 ## License
 
